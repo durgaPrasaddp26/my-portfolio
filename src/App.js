@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
-import About from './components/About';
+// import About from './components/About';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -10,18 +10,20 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Certifications from './components/Certification';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="text-light">
+    <div className="text-light" >
+      <Navbar />
       <Hero />
-      <About />
+      {/* <About /> */}
       <AboutMe />
       <Skills />
       <Projects />
       <Experience />
       <Education />
-      {/* <Certifications /> */}
+      <Certifications />
       <Resume />
       <Contact />
       <Footer />

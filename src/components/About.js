@@ -3,15 +3,16 @@
 import React from 'react';
 
 const sections = [
+  { name: 'Hero', id: 'hero' },
   { name: 'About Me', id: 'about-me' },
   { name: 'Skills', id: 'skills' },
   { name: 'Projects', id: 'projects' },
   { name: 'Experience', id: 'experience' },
   { name: 'Education', id: 'education' },
+  { name: 'Cert', id: 'certifications' },
   { name: 'Resume', id: 'resume' },
   { name: 'Contact', id: 'contact' },
-  { name: 'Hero', id: 'hero' },
-  //  { name: 'Certifications', id: 'certifications' },
+
 ];
 
 const About = () => {

@@ -60,19 +60,19 @@ const projects = [
 
 
 const Projects = () => (
-  <section id="projects" className="py-5 fade-in section-delay-1">
+  <div id="projects" className='p-3'>  <section className="pt-5 fade-in section-delay-1">
     <div className="container">
-      <h2 className="display-4 fw-bold text-center text-primary mb-5">Projects</h2>
+      <h2 className="display-5 fw-bold text-center text-primary mb-5">Projects</h2>
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {projects.map((project, index) => (
           <div key={project.name} className={`col slide-in section-delay-${index % 3 + 1}`}>
-            <div className="card bg-dark text-light border-primary card-hover h-100">
+            <div className="card bg-black text-light border-primary card-hover h-100">
               <div className="card-body d-flex flex-column">
                 <h3 className="card-title h4 fw-bold">{project.name}</h3>
                 <p className="card-text text-white">{project.desc}</p>
                 <p className="card-text"><small className="text-primary">Tech used: {project.tech}</small></p>
                 <div className="mt-auto d-flex gap-2 flex-wrap">
-                   {project.links.map(({ label, url }) =>
+                  {project.links.map(({ label, url }) =>
                     url ? (
                       <a
                         key={label}
@@ -96,7 +96,7 @@ const Projects = () => (
         ))}
       </div>
     </div>
-  </section>
+  </section></div>
 );
 
 
